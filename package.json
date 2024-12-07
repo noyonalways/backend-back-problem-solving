@@ -1,0 +1,21 @@
+{
+  "name": "backend-backpack-problem-solving",
+  "version": "1.0.0",
+  "description": "Backend Backpack Problem Solving",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Noyon Rahman",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.7.2"
+  }
+}
