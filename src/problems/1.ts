@@ -16,8 +16,21 @@ const peoples: IPerson[] = [
   { name: "Ayesha", age: 22, gender: "female" },
   { name: "Hasan", age: 35, gender: "male" },
   { name: "Nusrat", age: 27, gender: "female" },
-  { name: "Shakib", age: 40, gender: "female" },
+  { name: "Shakib", age: 40, gender: "male" },
   { name: "Sumaiya", age: 24, gender: "female" },
   { name: "Imran", age: 32, gender: "male" },
   { name: "Rashida", age: 29, gender: "female" },
 ];
+
+function getMaleNames(people: IPerson[]) {
+  const maleNames = [];
+  for (let i = 0; i < people.length; i++) {
+    if (people[i].gender !== "female") {
+      maleNames.push(people[i].name);
+    }
+  }
+  return maleNames;
+}
+
+// Example usage
+console.log(getMaleNames(peoples));
